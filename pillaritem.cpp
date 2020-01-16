@@ -99,3 +99,5 @@ bool PillarItem::collidesWithBird()
     }
     return false;
 }
+
+//pillars
