@@ -28,7 +28,7 @@ BirdItem::BirdItem(QPixmap pixmap):
     });
 
 
-    // yAnimation->start();
+    
 
     rotationAnimation = new QPropertyAnimation(this,"rotation",this);
     // rotateTo(90,1200,QEasingCurve::InQuad);
