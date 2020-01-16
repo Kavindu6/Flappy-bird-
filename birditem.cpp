@@ -31,7 +31,7 @@ BirdItem::BirdItem(QPixmap pixmap):
     
 
     rotationAnimation = new QPropertyAnimation(this,"rotation",this);
-    // rotateTo(90,1200,QEasingCurve::InQuad);
+    
 }
 
 qreal BirdItem::rotation() const
@@ -109,7 +109,7 @@ void BirdItem::fallToGroundIfNecessary()
     if(y() < groundPosition){
 
         rotationAnimation->stop();
-        //yAnimation->stop();
+        
 
         yAnimation->setStartValue(y());
         yAnimation->setEasingCurve(QEasingCurve::InQuad);
